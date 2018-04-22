@@ -124,9 +124,6 @@ func serialize(src interface{}) ([]byte, error) {
 // deserialize decodes a value using binary
 func deserialize(src []byte, dst interface{}) error {
 	buf := bytes.NewReader(src)
-	if err := gob.NewDecoder(buf).Decode(dst); err != nil {
-		return err
-	}
-
-	return nil
+	err := gob.NewDecoder(buf).Decode(dst)
+	return err
 }
