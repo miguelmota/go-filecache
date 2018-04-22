@@ -1,6 +1,6 @@
 # fcache
 
-> Arbitrary data caching to files in Go
+> Arbitrary data caching to tmp files in Go
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/fcache/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/fcache.svg?branch=master)](https://travis-ci.org/miguelmota/fcache) [![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/fcache?)](https://goreportcard.com/report/github.com/miguelmota/fcache) [![GoDoc](https://godoc.org/github.com/miguelmota/fcache?status.svg)](https://godoc.org/github.com/miguelmota/fcache)
 
