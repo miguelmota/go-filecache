@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/miguelmota/fcache"
+	filecache "github.com/miguelmota/go-filecache"
 )
 
 func main() {
@@ -14,14 +14,14 @@ func main() {
 	expire := 1 * time.Hour
 
 	// caching data
-	err := fcache.Set(key, data, expire)
+	err := filecache.Set(key, data, expire)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// reading cached data
 	var dst []byte
-	found, err := fcache.Get(key, &dst)
+	found, err := filecache.Get(key, &dst)
 	if err != nil {
 		log.Fatal(err)
 	}
