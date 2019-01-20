@@ -1,6 +1,6 @@
 <h3 align="center">
   <br />
-  <img src="https://user-images.githubusercontent.com/168240/51434579-12ff6b80-1c19-11e9-9d2b-ccb9b212c0dc.png" alt="logo" width="600" />
+  <img src="https://user-images.githubusercontent.com/168240/51435448-5fa07200-1c2c-11e9-99c3-21d4ee2b7a4a.png" alt="logo" width="550" />
   <br />
   <br />
   <br />
@@ -10,7 +10,7 @@
 
 > Fast arbitrary data caching to tmp files in Go
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/go-filecache/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/go-filecache.svg?branch=master)](https://travis-ci.org/miguelmota/go-filecache) [![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/go-filecache?)](https://goreportcard.com/report/github.com/miguelmota/go-filecache) [![GoDoc](https://godoc.org/github.com/miguelmota/go-filecache?status.svg)](https://godoc.org/github.com/miguelmota/go-filecache)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/go-filecache/master/LICENSE) [![Build Status](https://travis-ci.org/miguelmota/go-filecache.svg?branch=master)](https://travis-ci.org/miguelmota/go-filecache) [![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/go-filecache?)](https://goreportcard.com/report/github.com/miguelmota/go-filecache) [![GoDoc](https://godoc.org/github.com/miguelmota/go-filecache?status.svg)](https://godoc.org/github.com/miguelmota/go-filecache)
 
 ## Install
 
