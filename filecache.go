@@ -1,4 +1,4 @@
-package fcache
+package filecache
 
 import (
 	"bytes"

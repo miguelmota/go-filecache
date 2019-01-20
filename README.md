@@ -1,20 +1,28 @@
-# fcache
+<h3 align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/168240/51434579-12ff6b80-1c19-11e9-9d2b-ccb9b212c0dc.png" alt="logo" width="600" />
+  <br />
+  <br />
+  <br />
+</h3>
+
+# go-filecache
 
 > Fast arbitrary data caching to tmp files in Go
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/fcache/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/fcache.svg?branch=master)](https://travis-ci.org/miguelmota/fcache) [![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/fcache?)](https://goreportcard.com/report/github.com/miguelmota/fcache) [![GoDoc](https://godoc.org/github.com/miguelmota/fcache?status.svg)](https://godoc.org/github.com/miguelmota/fcache)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/go-filecache/master/LICENSE.md) [![Build Status](https://travis-ci.org/miguelmota/go-filecache.svg?branch=master)](https://travis-ci.org/miguelmota/go-filecache) [![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/go-filecache?)](https://goreportcard.com/report/github.com/miguelmota/go-filecache) [![GoDoc](https://godoc.org/github.com/miguelmota/go-filecache?status.svg)](https://godoc.org/github.com/miguelmota/go-filecache)
 
 ## Install
 
 ```bash
-go get -u github.com/miguelmota/fcache
+go get -u github.com/miguelmota/filecache
 ```
 
 ## Documentation
 
-[https://godoc.org/github.com/miguelmota/fcache](https://godoc.org/github.com/miguelmota/fcache)
+[https://godoc.org/github.com/miguelmota/go-filecache](https://godoc.org/github.com/miguelmota/go-filecache)
 
-## Usage
+## Getting started
 
 ```go
 package main
@@ -24,7 +32,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/miguelmota/fcache"
+	"github.com/miguelmota/go-filecache"
 )
 
 func main() {
@@ -33,14 +41,14 @@ func main() {
 	expire := 1 * time.Hour
 
 	// caching data
-	err := fcache.Set(key, data, expire)
+	err := filecache.Set(key, data, expire)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// reading cached data
 	var dst []byte
-	found, err := fcache.Get(key, &dst)
+	found, err := filecache.Get(key, &dst)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -52,4 +60,4 @@ func main() {
 
 ## License
 
-MIT
+[MIT](LICENSE)
