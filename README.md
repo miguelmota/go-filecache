@@ -15,7 +15,7 @@
 ## Install
 
 ```bash
-go get -u github.com/miguelmota/filecache
+go get -u github.com/miguelmota/go-filecache
 ```
 
 ## Documentation
